@@ -5,10 +5,10 @@ use db_funcionarios;
 create table funcionarios (
 	id int not null auto_increment,
 	nome varchar(30) not null,
-    idade tinyint,
-    area enum ('Adm','TI','Engenharia','Produção'),
-    salario decimal (8,2),
-    primary key (id));
+	idade tinyint,
+	area enum ('Adm','TI','Engenharia','Produção'),
+	salario decimal (8,2),
+	primary key (id));
  
 #inserindo dados na tabela
  insert into funcionarios (nome,idade,area,salario) values 
@@ -26,4 +26,10 @@ select * from funcionarios where salario < 2000;
 	update funcionarios 
 		set salario = 4500.33 
 		where id = 5;
+<<<<<<< HEAD
     
+=======
+    
+    
+    
+>>>>>>> 3d52b2eff24e1bde50737eac9f19bbc516b7778b
